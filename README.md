@@ -42,10 +42,15 @@ vbnet
 Copy
 Edit
 📦 PIE/
- ┣ 📂 controller/       → Manages API endpoints (Gateway to thought)
- ┣ 📂 model/            → Defines core data abstractions (The mind's blueprint)
- ┣ 📂 service/          → Logic layer (Where decisions are made)
- ┗ 📜 PieApplication.java  → The spark that brings PIE to life
+ ┣ 📂 controller/      
+ → Manages API endpoints (Gateway to thought)
+ ┣ 📂 model/            
+ → Defines core data abstractions (The mind's blueprint)
+ ┣ 📂 service/         
+ → Logic layer (Where decisions are made)
+ ┗ 📜 PieApplication.java  
+ → The spark that brings PIE to life
+
 🧘 About the Author
 Created with ☕, abstraction, and relentless curiosity by Al Araf — a mind that sees code as philosophy in action, and systems as reflections of society.
 
