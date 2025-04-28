@@ -11,13 +11,15 @@ import java.util.List;
 @RequestMapping("/api/personality")
 public class PersonalityController {
 
+    private final PersonalityService personalityService;
+
     @Autowired
-    private PersonalityService personalityService;
+    public PersonalityController(PersonalityService personalityService) {
+        this.personalityService = personalityService;
+    }
 
     @GetMapping("/questions")
     public List<Question> getQuestions() {
         return personalityService.getQuestions();
     }
-
-    // Later: We'll add POST method to handle answers
 }
