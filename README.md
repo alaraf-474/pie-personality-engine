@@ -1,62 +1,97 @@
-**** > PIE: Personality Insight Engine
-A fusion of behavioral science, modular logic, and elegant engineering.
+
+---
+
+# PIE: Personality Insight Engine
+
+**PIE** is a backend service built with Java and Spring Boot that provides context-aware attire recommendations based on personality profiles derived from user input. It is designed to showcase modular backend architecture and domain-driven design while addressing a practical use case: mapping behavioral traits to functional lifestyle suggestions.
+
+---
+
+## Features
+
+- Behavioral profiling through structured input (income, lifestyle, mindset)
+- Attire suggestion engine tailored to personality and context
+- Clean, modular codebase following Spring Boot best practices
+- Easily extensible for future personality models or use cases
+
+---
+
+## Live Deployment
+
+**Base URL:**  
+[`https://pie-personality-engine-production.up.railway.app`](https://pie-personality-engine-production.up.railway.app)
+
+**Example Endpoint:**  
+`POST /api/personality`
+
+---
+
+Tech Stack
+
+Java 17 – Modern, stable, and feature-rich
+
+Spring Boot – Production-ready application framework
+
+Maven – Build and dependency management
+
+Git + GitHub – Version control and collaboration
+
+Railway – Lightweight cloud deployment
 
 
-▲ What is PIE?
-▲ PIE (Personality Insight Engine) is a philosophical yet practical backend system crafted with Java and Spring Boot. It delves into human behavioral patterns using structured questions and 
-maps them to intelligent attire suggestions — personalized by income, lifestyle, and mindset.
 
-▲This engine isn't just code. It's a demonstration of how engineering can interface with cognition, how logic can translate into lifestyle, and how philosophy finds expression in software systems.
+---
 
-▲ Conceptual Philosophy
-PIE is built on the belief that:
+Project Structure
 
->>>> Human behavior, though unpredictable, has mappable patterns
+PIE/
+├── controller/              # API layer
+│   └── PersonalityController.java
+│
+├── service/                 # Business logic
+│   └── PersonalityService.java
+│
+├── model/                   # Domain models
+│   └── PersonalityProfile.java
+│   └── AttireSuggestion.java
+│
+└── PieApplication.java      # Main application entry point
 
->>>> Insightful questions reveal more than analytics ever could
 
->>>> A simple suggestion — like what to wear — can echo deeper truths about our daily decisions
+---
 
-▲ Built With
-Java 17 – Stable, modern, object-oriented foundation
 
-Spring Boot – For clean, modular, production-ready architecture
+Java 17+
 
-Maven – Dependency management that keeps everything smooth
+Maven
 
-IntelliJ IDEA – A space for thought to become software
 
-Git & GitHub – For versioned reflection of evolving insight
+Run Locally
 
-▲ Features
->>>> Personality profiling using structured behavioral algorithms
+git clone https://github.com/alaraf-474/pie-personality-engine.git
+cd pie-personality-engine
+mvn spring-boot:run
 
->>>> Contextual attire recommendations (not just for fashion — but function and identity)
+The API will be available at http://localhost:8080.
 
->>>> Extensible architecture — ready to evolve with future psychological models
 
->>>> Designed for learners who want to understand Spring Boot beyond tutorials
+---
 
-****> Project Structure
+Author
 
-📦 PIE/
- ┣ 📂 controller/      
- → Manages API endpoints (Gateway to thought)
- 
- ┣ 📂 model/            
- → Defines core data abstractions (The mind's blueprint)
- 
- ┣ 📂 service/         
- → Logic layer (Where decisions are made)
- 
- ┗ 📜 PieApplication.java   → The spark that brings PIE to life
+Al Araf
+Backend Developer | Systems Thinker
 
-▲ ▲ About the Author->>>  Created with ☕, abstraction, and relentless curiosity by Al Araf — a mind that sees code as philosophy in action, and systems as reflections of society.
+GitHub: @alaraf-474
 
-- GitHub: [@alaraf-474](https://github.com/alaraf-474)
-- LinkedIn: [Al Araf](abdullah-al-araf-rishad-095403306) 
+LinkedIn: Al Araf
 
-▲ Closing Thought
-"Curisity KILLS!! Always Mind your Own business."
-— PIE Design Philosophy
 
+
+---
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
