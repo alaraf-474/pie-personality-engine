@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/personality")
@@ -21,5 +22,12 @@ public class PersonalityController {
     @GetMapping("/questions")
     public List<Question> getQuestions() {
         return personalityService.getQuestions();
+    }
+
+
+
+    @PostMapping("/analyze")
+    public Map<String, String> analyzePersonality(@RequestBody Map<String, String> answers) {
+        return personalityService.analyzePersonality(answers);
     }
 }
